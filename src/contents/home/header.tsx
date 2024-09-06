@@ -7,7 +7,7 @@ export const Header = () => {
       <div>
         <h1 className="text-5xl font-extrabold leading-tight">
           LET YOUR MIND{" "}
-          <span className="bg-gradient-to-r from-[#724BF9] via-[#E25EF9] to-[#BD049E] bg-clip-text text-transparent">
+          <span className="custom-gradient-background bg-clip-text text-transparent">
             EXPLORE
           </span>{" "}
           NEW WORLD
@@ -19,6 +19,18 @@ export const Header = () => {
         </p>
       </div>
       <Image src={images.vr} alt="VR" />
+      <div className="flex gap-6">
+        <button className="custom-gradient-background h-16 w-full skew-x-[-20deg] text-lg font-bold">
+          BUY NOW
+        </button>
+        <button className="custom-gradient-background w-full skew-x-[-20deg] p-[1px] text-lg font-bold">
+          <span className="flex h-full w-full items-center justify-center bg-background">
+            <span className="custom-gradient-background bg-clip-text text-transparent">
+              PLAY NOW
+            </span>
+          </span>
+        </button>
+      </div>
     </div>
   );
 };

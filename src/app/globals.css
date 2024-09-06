@@ -25,3 +25,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .custom-gradient-background {
+    @apply bg-gradient-to-r from-[#724BF9] via-[#E25EF9] to-[#BD049E];
+  }
+}
